@@ -1,11 +1,22 @@
-import "./styles.css";
+import React from 'react';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import PolicyAssistant from './components/PolicyAssistant';
+import FindCare from './components/FindCare';
+import Checklist from './components/Checklist';
+import './styles.css';
 
 function App() {
   return (
-    <main className="app">
-      <h1>CareConnect</h1>
-      <p>Healthcare navigation and policy assistant.</p>
-    </main>
+    <div className="app">
+      <Header />
+      <main className="main-content">
+        <Hero />
+        <PolicyAssistant />
+        <FindCare />
+        <Checklist />
+      </main>
+    </div>
   );
 }
 
